@@ -9,93 +9,97 @@
     <title>Gama Academy - Calculadora de churrasco</title>
   </head>
   <body>
-  <header class="container text-center">
-      <h5>GAMA ACADEMY</h5>
-      <h2>Calculadora de Churrasco</h2>
-    </header>
+    <div class="container px-5">
+      <header class="text-center py-5">
+        <h5 class="py-4">GAMA ACADEMY</h5>
+        <h2>Calculadora de Churrasco</h2>
+      </header>
 
-    <div class="container-sm px-5">
-
-      <div class="row">
-        <div class="comidas col">
+    
+      <div class="row mb-5 px-5">
+        <div class="comidas col-md-4 mb-2">
           <span>Comidas</span>
-        </div>
-      <div class="col">
-        <div class="row">
-          <div class="col">
-            <input id="mulheres-qnt" class="form-control" type="number" />
-            <label for="mulheres-qnt" >Mulheres</label>
-          </div>
-          <div class="col">
-            <input id="homens-qnt" class="form-control" type="number" />
-            <label for="homens-qnt">Homens</label>
-          </div>
-          <div class="col">
-            <input id="criancas-qnt" class="form-control" type="number" />
-            <label for="criancas-qnt">Crianças</label>
-          </div>
-          <br>
-        </div>
-  
-        <input id="acompanhamentos" type="checkbox" />
-        <label for="acompanhamentos">acompanhamentos</label>
-    </div>
-      </div>
-
-
-    <div>
-      <div class="row">
-        <div class="bebidas col">
-          <span>Bebidas</span>
         </div>
         <div class="col">
           <div class="row">
-            <div class="col">
+            <div class="col-sm text-center">
+              <input id="mulheres-qnt" class="form-control" type="number" />
+              <label for="mulheres-qnt" >Mulheres</label>
+            </div>
+            <div class="col-sm text-center">
+              <input id="homens-qnt" class="form-control" type="number" />
+              <label for="homens-qnt">Homens</label>
+            </div>
+            <div class="col-sm text-center">
+              <input id="criancas-qnt" class="form-control" type="number" />
+              <label for="criancas-qnt">Crianças</label>
+            </div>
+            <br>
+          </div>
+          <div class="row">
+            <input id="acompanhamentos" type="checkbox" class="form-check-input" />
+            <label for="acompanhamentos">acompanhamentos</label>
+          </div>
+
+      
+
+
+        </div>
+      </div>
+      <!-- end div row -->
+
+
+      <div class="row mb-5 px-5">
+        <div class="bebidas col-md-4 mb-2">
+          <span>Bebidas</span>
+        </div>
+        <div class="col-sm">
+          <div class="row">
+            <div class="col-sm text-center">
               <input id="bebidas-alcoolicas" class="form-control" type="number" />
               <label for="bebidas-alcoolicas">Bebidas alcoolicas</label>
             </div>
-            <div class="col">
+            <div class="col text-center">
               <input id="bebidas-nao-alcoolicas" class="form-control" type="number" />
               <label for="bebidas-nao-alcoolicas">Bebidas não alcoolicas</label>
-
             </div>
           </div>
-    
         </div>
-        
+      </div>
+      <!-- end div row -->
 
+
+      <div class="col d-flex justify-content-center">
+        <button id="botaoCalcular" class="btn btn-success col-md-3">Calcular</button>
       </div>
-      <div class="col text-center">
-        <button id="botaoCalcular">Calcular</button>
+      
+      
+      <div class="row mt-5 px-5 display d-flex justify-items-start">
+        <div class="col-sm">
+          <div>
+            <span>Total de carne: </span><label for="total-carne" id="total-carne"></label>
+          </div>
+          <div>
+            <span>Total de pessoas: </span> <label for="total-pessoas" id="total-pessoas"></label>
+          </div>
+          <div>
+            <span>Acompanhamentos: </span><label for="total-acompanhamento" id="total-acompanhamento"></label>
+          </div>
+
+        </div>
+        <div class="col-sm">
+          <div>
+            <span>Bebidas não-alcoólicas: </span><label for="total-bebidas-nao-alcoolicas" id="total-bebidas-nao-alcoolicas"></label>
+          </div>
+          <div>
+            <span>Bebidas alcoólicas: </span><label for="total-bebidas-alcoolicas" id="total-bebidas-alcoolicas"></label>
+          </div>
+        </div>
       </div>
+      <!-- end div row -->
+      
     </div>
-    <br>
 
-      <div>
-        <div>
-
-
-
-        
-          <span>Total de carne: </span><label for="total-carne" id="total-carne"></label>
-        </div>
-        <div>
-          <span>Total de pessoas: </span> <label for="total-pessoas" id="total-pessoas"></label>
-        </div>
-        <div>
-          <span>Acompanhamentos: </span><label for="total-acompanhamento" id="total-acompanhamento"></label>
-        </div>
-        <div>
-          <span>Bebidas não-alcoólicas: </span><label for="total-bebidas-nao-alcoolicas" id="total-bebidas-nao-alcoolicas"></label>
-        </div>
-        <div>
-          <span>Bebidas alcoólicas: </span><label for="total-bebidas-alcoolicas" id="total-bebidas-alcoolicas"></label>
-        </div>
-        <div>
-      </div>
-    </div>
-    
-  </div>
     <script src="./src/main.js"></script>
   </body>
 </html>
